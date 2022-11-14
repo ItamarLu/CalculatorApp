@@ -1,83 +1,193 @@
-let sum = 0
-screenText.textContent = sum
+let numberOne = ""
+let numberTwo = ""
+let operatorVerif = ""
+let operatorSc = ""
+let sc = numberOne + operatorSc + numberTwo
 
 function bC() {
-  sum = 0
-  screenText.textContent = sum
+  numberOne = ""
+  numberTwo = ""
+  operatorVerif = ""
+  operatorSc = ""
+  screenText.textContent = "0"
 }
 function bS() {
-  sum = sum * sum
-  screenText.textContent = sum
+  let square = +numberOne
+  screenText.textContent = square * square
 }
 function bE() {
-  
-  screenText.textContent = sum
+  if (numberTwo != "" ) {
+    numberTwo = ""
+    sc = numberOne + operatorSc + numberTwo
+    screenText.textContent = sc
+    return
+  }
+  if (numberTwo == "" && operatorSc != "") {
+    operatorSc = ""
+    operatorVerif = ""
+    sc = numberOne + operatorSc + numberTwo
+    screenText.textContent = sc
+    return
+  }
+  if (numberOne != "" && numberTwo == "" && operatorSc == "") {
+    numberOne = ""
+    sc = numberOne + operatorSc + numberTwo
+    screenText.textContent = sc
+    return
+  }
 }
 function bD() {
-  
-  screenText.textContent = sum
+  operatorVerif = 4
+  operatorSc = " / "
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bSe() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "7"
+  }
+  else {
+    numberTwo += "7"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bEi() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "8"
+  }
+  else {
+    numberTwo += "8"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bN() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "9"
+  }
+  else {
+    numberTwo += "9"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bM() {
-  
-  screenText.textContent = sum
+  operatorVerif = 1
+  operatorSc = " x "
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bF() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "4"
+  }
+  else {
+    numberTwo += "4"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bFi() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "5"
+  }
+  else {
+    numberTwo += "5"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bSi() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "6"
+  }
+  else {
+    numberTwo += "6"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bMi() {
-  
-  screenText.textContent = sum
+  operatorVerif = 2
+  operatorSc = " - "
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bO() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "1"
+  }
+  else {
+    numberTwo += "1"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bT() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "2"
+  }
+  else {
+    numberTwo += "2"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bTh() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "3"
+  }
+  else {
+    numberTwo += "3"
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bP() {
-  
-  screenText.textContent = sum
+  operatorVerif = 3
+  operatorSc = " + "
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bR() {
-  
-  screenText.textContent = sum
+
+  let root = Math.sqrt(+numberOne)
+  screenText.textContent = root
 }
 function bZ() {
-  
-  screenText.textContent = sum
+  if (operatorVerif == 0) {
+    numberOne += "0"
+  }
+  else {
+    numberTwo += "0"
+  } 
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
-function bCo() {
-  
-  screenText.textContent = sum
+function bPo() {
+  if (operatorVerif == 0) {
+    numberOne += "."
+  }
+  else {
+    numberTwo += "."
+  }
+  sc = numberOne + operatorSc + numberTwo
+  screenText.textContent = sc
 }
 function bEq() {
-
-  screenText.textContent = sum
+  let n1 = +numberOne
+  let n2 = +numberTwo
+  if (operatorVerif==1) {
+    screenText.textContent = n1 * n2
+  }
+  if (operatorVerif==2) {
+    screenText.textContent = n1 - n2
+  }
+  if (operatorVerif==3) {
+    screenText.textContent = n1 + n2
+  }
+  if (operatorVerif==4) {
+    screenText.textContent = n1 / n2
+  }
 }

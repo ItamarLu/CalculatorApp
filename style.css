@@ -46,3 +46,8 @@ body {
 .Row {
   display: flex;
 }
+#Desc {
+  width: 370px;
+  margin: 0 auto;
+  text-align: center;
+}
