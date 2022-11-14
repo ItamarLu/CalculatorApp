@@ -1,13 +1,13 @@
 body {
-  background:darkgray;
+  background:#4a4e69;
 }
 #Calc-body {
-  border: 2px solid black;
+  border: 3px solid #001d3d;
   border-radius: 5px;
   padding: 10px;
   margin: 10px auto;
   width: 350px;
-  background:slateblue;
+  background:#003566;
 }
 #top-space {
   margin: 0 auto;
@@ -16,14 +16,14 @@ body {
 #screen {
   margin: 0 auto;
   height: 70px;
-  border: 2px solid black;
+  border: 2px solid #001d3d;
   margin-bottom: 3px;
   border-radius: 5px;
   text-align: end;
   font-size: 32px;
   font-weight: bold;
   padding-right: 20px;
-  background: lightgrey;
+  background: lightgray;
 }
 #buttons {
   display: flex;
@@ -34,7 +34,7 @@ body {
   width: 83px;
   height: 83px;
   margin: 3px;
-  border: 1px solid black;
+  border: 1px solid #001d3d;
   border-radius: 5px;
   background: lightgray;
   font-size: 25px;
@@ -50,4 +50,7 @@ body {
   width: 370px;
   margin: 0 auto;
   text-align: center;
+  background: lightgray;
+  border-radius: 5px;
+  border: 3px solid #001d3d;
 }
